@@ -73,7 +73,7 @@
 \usepackage{functions}
 %http://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include
 \newcommand{\setmuskip}[2]{#1=#2\relax} %%problem usinig mu with calc (req by mathtools) loaded
-\usepackage{tikzdir}%%contain tikz files as filecontents
+
 \usepackage{sources}
 
 
@@ -192,6 +192,8 @@
 
 % Let's get started
 \begin{document}
+
+\input{tikzdir}%%contain tikz files as filecontents
 
 \addtobeamertemplate{block begin}{\setlength\abovedisplayskip{2pt}\setlength\belowdisplayskip{2pt}\setlength\abovedisplayshortskip{2pt}\setlength\belowdisplayshortskip{2pt}}
 
