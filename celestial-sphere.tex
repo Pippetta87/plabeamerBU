@@ -46,40 +46,6 @@ coordinate system with an appriopriate transformation. Some highlights:
 
 
 
-%% helper macros
-
-\gdef\pgfmathsinandcos[3]{%
-  \pgfmathsetmacro#1{sin(#3)}%
-  \pgfmathsetmacro#2{cos(#3)}%
-}
-\gdef\LongitudePlane[3][current plane]{%
-  \pgfmathsinandcos\sinEl\cosEl{#2} % elevation
-  \pgfmathsinandcos\sint\cost{#3} % azimuth
-  \tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
-}
-\gdef\LatitudePlane[3][current plane]{%
-  \pgfmathsinandcos\sinEl\cosEl{#2} % elevation
-  \pgfmathsinandcos\sint\cost{#3} % latitude
-  \pgfmathsetmacro\yshift{\cosEl*\sint}
-  \tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}} %
-}
-\gdef\DrawLongitudeCircleName[3][1]{
-  \LongitudePlane{\angEl}{#2}
-  \tikzset{current plane/.prefix style={scale=#1}}
-   % angle of "visibility"
-  \pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))} %
-  \draw[name path=#3,current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
-  \draw[name path=dashed#3,current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
-}
-\gdef\DrawLatitudeCircleName[3][2]{
-  \LatitudePlane{\angEl}{#2}
-  \tikzset{current plane/.prefix style={scale=#1}}
-  \pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
-  % angle of "visibility"
-  \pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
-  \draw[name path=#3,current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
-  \draw[name path=dashed#3,current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
-}
 
 %% document-wide tikz options and styles
 
