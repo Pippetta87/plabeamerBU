@@ -48,22 +48,22 @@ coordinate system with an appriopriate transformation. Some highlights:
 
 %% helper macros
 
-\newcommand\pgfmathsinandcos[3]{%
+\gdef\pgfmathsinandcos[3]{%
   \pgfmathsetmacro#1{sin(#3)}%
   \pgfmathsetmacro#2{cos(#3)}%
 }
-\newcommand\LongitudePlane[3][current plane]{%
+\gdef\LongitudePlane[3][current plane]{%
   \pgfmathsinandcos\sinEl\cosEl{#2} % elevation
   \pgfmathsinandcos\sint\cost{#3} % azimuth
   \tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
 }
-\newcommand\LatitudePlane[3][current plane]{%
+\gdef\LatitudePlane[3][current plane]{%
   \pgfmathsinandcos\sinEl\cosEl{#2} % elevation
   \pgfmathsinandcos\sint\cost{#3} % latitude
   \pgfmathsetmacro\yshift{\cosEl*\sint}
   \tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}} %
 }
-\newcommand\DrawLongitudeCircleName[3][1]{
+\gdef\DrawLongitudeCircleName[3][1]{
   \LongitudePlane{\angEl}{#2}
   \tikzset{current plane/.prefix style={scale=#1}}
    % angle of "visibility"
