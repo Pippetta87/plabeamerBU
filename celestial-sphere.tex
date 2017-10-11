@@ -71,7 +71,7 @@ coordinate system with an appriopriate transformation. Some highlights:
   \draw[name path=#3,current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
   \draw[name path=dashed#3,current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
 }
-\newcommand\DrawLatitudeCircleName[3][2]{
+\gdef\DrawLatitudeCircleName[3][2]{
   \LatitudePlane{\angEl}{#2}
   \tikzset{current plane/.prefix style={scale=#1}}
   \pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
