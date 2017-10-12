@@ -38,7 +38,7 @@
 &\dvec{L}=0\\
 &\scap{J}{L}=0\\
 &\scap{L}{r}=\frac{1}{\mu}J^2-\gamma r\\
-&L^2=
+&L^2=\gamma^2+\frac{2}{\mu}EJ^2
 \end{align*}
 
 \end{block}
@@ -58,38 +58,16 @@
 &\vec{r}=\vec{r}_1-\vec{r}_2
 \end{align*}
 
-\end{wordonframe}
-
-\begin{frame}{Costanti del moto}
-
-
-
-\begin{align*}
-&\vec{J}=\mu\vec{r}\wedge\dvec{r}\\
-&\vec{J}\cdot\vec{r}=0\\
-&\vec{J}\cdot\dvec{r}=0
-\end{align*}
-
-\begin{align*}
-&\vec{L}=\dvec{r}\wedge\vec{J}-\gamma\frac{\vec{r}}{r}=\dvec{r}\wedge\vec{J}-Gm_1m_2\frac{\vec{r}}{r}\\
-&\dvec{L}=0\\
-&\scap{J}{L}=0\\
-&\scap{L}{r}=\frac{1}{\mu}J^2-\gamma r\\
-&L^2=
-\end{align*}
-
 $\vec{r}$ ruota in piano perpendicolare a $\vec{J}$ e $\vec{L}$ \'e sul piano dell'orbita.
 
-
-\end{frame}
-
+\end{wordonframe}
 
 
 \begin{frame}{forma dell'orbita}
 
 \begin{columns}
 
-\begin{column}{0.5\textwidth}
+\begin{column}{0.4\textwidth}
 
 \input{conservedvector}
 
@@ -97,14 +75,27 @@ $\vec{r}$ ruota in piano perpendicolare a $\vec{J}$ e $\vec{L}$ \'e sul piano de
 
 \begin{column}{0.45\textwidth}
 
+\begin{align*}
+
+Lr\cos{v}+\gamma r=\frac{1}{\mu}J^2
+\end{align*}
 
 
 \end{column}
 
 \end{columns}
 
-
 \end{frame}
+
+\begin{wordonframe}{Orbita kepleriana}
+
+L'orbita \'e una conica con asse lungo $\vec{L}$, il modulo di L dipende da E e J
+
+\begin{align*}
+e\lessgtr1\Leftrightarrow L\lessgtr\gamma\Leftrightarrow E\lessgtr0
+\end{align*}
+
+\end{wordonframe}
 
 \begin{frame}{Elementi orbitali}
 \input{celestial-sphere}
