@@ -8,25 +8,45 @@
 
 \input{reducedproblem}
 
-
-\end{column}
-
-\begin{column}{0.45\textwidth}
-
 \begin{align*}
 &m_1\ddvec{r}_1=\frac{m_1m_2G}{r^3}\vec{r}\\
 &m_2\ddvec{r}_2=\frac{m_1m_2G}{r^3}\vec{r}\\
 &\mu\ddvec{r}=-k^2\frac{\vec{r}}{r^3}=-\frac{\gamma}{\mu}\frac{\vec{r}}{r^3}
 \end{align*}
 
+
 \end{column}
 
-\end{columns}
+\begin{column}{0.45\textwidth}
+
+\begin{block}{Costanti del moto}
+
 
 \begin{align*}
 &E_T=\frac{1}{2}m_1\dvec{r}_1^2+\frac{1}{2}m_2\dvec{r}_2^2-G\frac{m_1m_2}{r}\\
 &=E_{CM}+E=\frac{1}{2}M\dvec{R}^2+\frac{1}{2}\mu\dvec{r}^2-G\frac{M\mu}{r}
 \end{align*}
+
+\begin{align*}
+&\vec{J}=\mu\vec{r}\wedge\dvec{r}\\
+&\vec{J}\cdot\vec{r}=0\\
+&\vec{J}\cdot\dvec{r}=0
+\end{align*}
+
+\begin{align*}
+&\vec{L}=\dvec{r}\wedge\vec{J}-\gamma\frac{\vec{r}}{r}=\dvec{r}\wedge\vec{J}-Gm_1m_2\frac{\vec{r}}{r}\\
+&\dvec{L}=0\\
+&\scap{J}{L}=0\\
+&\scap{L}{r}=\frac{1}{\mu}J^2-\gamma r\\
+&L^2=
+\end{align*}
+
+\end{block}
+
+\end{column}
+
+\end{columns}
+
 
 
 \end{frame}
@@ -40,18 +60,9 @@
 
 \end{wordonframe}
 
+\begin{frame}{Costanti del moto}
 
-\begin{frame}{Moto piano}
 
-\begin{columns}
-
-\begin{column}{0.55\textwidth}
-
-\input{conservedvector}
-
-\end{column}
-
-\begin{column}{0.45\textwidth}
 
 \begin{align*}
 &\vec{J}=\mu\vec{r}\wedge\dvec{r}\\
@@ -68,6 +79,24 @@
 \end{align*}
 
 $\vec{r}$ ruota in piano perpendicolare a $\vec{J}$ e $\vec{L}$ \'e sul piano dell'orbita.
+
+
+\end{frame}
+
+
+
+\begin{frame}{forma dell'orbita}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\input{conservedvector}
+
+\end{column}
+
+\begin{column}{0.45\textwidth}
+
 
 
 \end{column}
