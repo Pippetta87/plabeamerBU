@@ -35,7 +35,7 @@
 %		\coordinate (equator) at (\H,0);
 
 
-    \draw[->] (0,-\H-5) -- (0,\R+5) node[above] {}; %axis of rotation
+    \draw[->] (0,-\H-2) -- (0,\R+2) node[above] {}; %axis of rotation
 %		\draw[->,rotate=-30.0] (0,-\H-5) -- (0,\R+5) node[above] {\bf{Zenith}}; %axis of rotation
 
     \path[xzplane] (\R,0) coordinate (XE);
@@ -54,7 +54,7 @@
 %    \node[below=5pt, right=4pt] at (S) {\bf{South}};
 %    \node[below=14pt, right=4pt] at (S) {\bf{pole}};
 
-    \def\R{3} % sphere radius
+    \def\R{3.5} % sphere radius
     \def\angEl{5} % elevation angle
     \def\angAz{105} % azimuth angle
     \def\angPhi{-40} % longitude of point P
@@ -116,10 +116,13 @@
     \node[above=7pt, left=5pt] at (N) {\bf{North celestial pole}};
     \node[below=8pt, right=5pt] at (S) {\bf{South celestial pole}};
     
-    \def\R{3} % sphere radius
+    \def\R{3.5} % sphere radius
     \def\angEl{5} % elevation angle
     \def\angAz{105} % azimuth angle
     \def\angPhi{-40} % longitude of point P
     \def\angBeta{19} % latitude of point P
 \DrawLatitudeCircleName[\R,rotate=23.5+13, color=green]{0}{orb} % piano dell'orbita
+
+\draw
+
 \end{tikzpicture}
