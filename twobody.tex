@@ -181,7 +181,7 @@ L'angolo $\Omega$ identifica l'orientazione della linea dei nodi rispetto al pun
 
 \begin{columns}
 
-\begin{column}{0.25\textwidth}
+\begin{column}{0.2\textwidth}
 
 \begin{figure}[!ht]
 
@@ -189,22 +189,27 @@ L'angolo $\Omega$ identifica l'orientazione della linea dei nodi rispetto al pun
 
 \end{figure}
 
-\begin{block}{Anomalia eccentrica}
-
-\begin{align}
-r\cos{\nu}=a\cos{u}-ae
-\end{align}
-
-\end{block}
 
 
 \end{column}
 
-\begin{column}{0.4\textwidth}
+\begin{column}{0.8\textwidth}
+
+\begin{block}{Anomalia eccentrica}
+
+\begin{align*}
+&r\cos{\nu}=a\cos{u}-ae\\
+&\pi\frac{ab}{T}=\frac{1}{2}nab=\frac{1}{2}r^2\dot{v}=\frac{1}{2}br\dot{u}\\
+&=\frac{1}{2}ab(1-e\cos{u})\dot{u}=\frac{1}{2}ab\TDof{t}(u-e\sin{u})
+\end{align*}
+
+\end{block}
 
 \end{column}
 
 \end{columns}
+
+
 
 \end{frame}
 
@@ -214,9 +219,7 @@ u \'e detta anomalia eccentrica
 
 \begin{align*}
 &a(1-e\cos{u})=\frac{p}{1+\cos{\nu}}\\
-&\tg{\nu/2}=\sqrt{\frac{1+e}{1-e}}\tg{u/2}\\
-&\frac{1}{2}r^2\dot{v}=\frac{1}{2}br\dot{u}\\
-&=\frac{1}{2}ab(1-e\cos{u})\dot{u}=\frac{1}{2}ab\PDof{t}(u-e\sin{u})
+&\tg{\nu/2}=\sqrt{\frac{1+e}{1-e}}\tg{u/2}
 \end{align*}
 
 \end{wordonframe}
