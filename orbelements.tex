@@ -10,7 +10,7 @@
 
   \coordinate (O) at (0,0,0);
 
-  \draw [->] (O) -- (2,0,0) node[anchor=north east] {$x$};
+  \draw [->] (O) -- (1.7,0,0) node[anchor=north east] {$x$};
   \draw [->] (O) -- (0,1,0) node[anchor=north west] {$y$};
   \draw [->] (O) -- (0,0,1) node[anchor=south] {$z$};
 
@@ -29,7 +29,7 @@
     % \draw[->] (O) -- (1,0,0) node [above] {$x'$};
     % \draw[->] (O) -- (0,1,0) node [above] {$y'$};
     \draw[->] (O) -- (0,0,1) node [above] {$\hat{h}$};
-    \draw (1,0,0) -- (-1,0,0);
+    \draw (1,0,0) -- (-1,0,0) node[above] {Semi-major axis};
      \tdplotdrawarc[->]{(O)}{.33*\r}{90}{180}{anchor=west}{$\omega$}
     \coordinate (P) at (180+\f:\r);
     \draw (O) -- (P);
