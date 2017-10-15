@@ -32,7 +32,7 @@
 \begin{align*}
 &p_r=\PDy{\dot{r}}{L}=\mu\dot{r}\\
 &p_{\beta}=\PDy{\dot{\beta}}{L}=\mu r^2\dot{\beta}\\
-&p_{\lambda}=\PDy{\dot{\lambda}}{L}=\mu r^2\cos{\beta}^2\dot{\lambda}\ \dot{p}_{\lambda}=0
+&p_{\lambda}=\PDy{\dot{\lambda}}{L}=\mu r^2\cos{\beta}^2\dot{\lambda}\quad \dot{p}_{\lambda}=0
 \end{align*}
 
 \end{block}
@@ -90,6 +90,46 @@ Trovare trasformazione canonica tale che $K=0$: $(\xi,\eta)$ sono costanti del m
 
 
 \end{block}
+
+\begin{frame}{Soluzione dell'equazione di H-J}
+
+\begin{align*}
+\frac{1}{2\mu}[(\PDy{r}{S})^2+\frac{1}{r^2}(\PDy{\beta}{S})^2+\frac{1}{r^2\cos{\beta}^2}(\PDy{\lambda}{S})^]-\frac{k^2\mu}{r}=-\PDy{t}{S}
+\end{align*}
+
+\begin{block}{L'equazione di H-J \'e separabile}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\begin{align*}
+S(r,\beta,\lambda,t)=S_r(r)+s_{\beta}(\beta)+S_{\lambda}(\lambda)-\sigma t\\
+\end{align*}
+
+\end{column}
+
+Un integrale completo contiene tante variabili quanti sono i gradi di libert\'a: le $\eta$.
+
+\begin{column}{0.5\textwidth}
+
+\begin{align*}
+&S_{\lambda}=J_{\lambda}\lambda\\
+&S_{\beta}=Jw-J_{\lambda}\bar{\lambda}\\
+S_r=ku\sqrt{a}(u+e\sin{u})-ku\sqrt{p}v
+\end{align*}
+
+\end{column}
+
+\end{columns}
+
+
+
+\end{block}
+
+
+\end{frame}
+
 
 
 \section{Sistemi integrabili e degenerazione}
