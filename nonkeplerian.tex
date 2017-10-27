@@ -113,17 +113,11 @@ T_{\lambda}=\frac{\pi}{\Delta}T_{r}
 
 \section{Metodo di Newton}
 
-\begin{columns}  \begin{column}{0.3\textwidth}
-
-f forza centrale
-
-\end{column} \begin{column}{0.7\textwidth}
 
 \begin{equation*}
 \mu\ddot{r}=f+\frac{c}{r^3}+\frac{J^2}{\mu r^3}=f+\frac{J'^2}{\mu r^3}
 \end{equation*}
 
-\end{column}  \end{columns}
 
 Stessa moto radiale con diverso j; moto angolare perturbato ha velocit\'a proporzionale a quello imperturbato: $\frac{\dot{\lambda}}{\dot{\lambda'}}=\frac{J}{J'}$.
 
@@ -132,6 +126,8 @@ Moto medio del pericentro: $\frac{3}{2}n\frac{R^2}{a^2}J_2$.
 \end{block}
 
 \begin{wordonframe}{Perturbazione orbita quasi-circolare}
+
+f forza centrale
 
 \begin{align*}
 V'(\theta=\pi/2)=-\frac{3Q}{r^4}\approx\frac{3Q}{r^2a^2}-\frac{6Q}{ar^3}+o((r-a)^2)
@@ -159,10 +155,51 @@ d\vec{K}=\vec{r}\wedge d\vec{F}=\frac{GM\,dm}{R^3}(1+3\frac{\scap{R}{r}}{R^2})\v
 
 \end{column}  \end{columns}
 
+\begin{block}{Media annua}
+
+\begin{columns}  \begin{column}{0.4\textwidth}
+
+\begin{align*}
+&\bar{K}_{\xi}=\frac{3GM}{2R^3}(C-A)\sin{\epsilon}\cos{\epsilon}\\
+&\bar{K}_{\eta}=\bar{K}_{\zeta}=0
+\end{align}
+
+\end{column} \begin{column}{0.6\textwidth}\end{column}
+
+\begin{figure}[!ht]
+
+\includegraphics[width=\textwidth]{eclcoord}
+
+\end{figure}
+
+\end{columns}
+
+
+\end{block}
+
+\begin{block}{Velocit\'a di precessione della Terra dovuta all'attrazione lunisolare}
+
+\begin{equation*}
+P=P_{\odot}+P_{\leftmoon}\approx\ang{;;50.3}\si{\per\year}
+\end{equation*}
+
+
+\end{block}
+
 
 \end{frame}
 
+\begin{wordonframe}{Momento delle forze}
 
-$\leftmoon$
+\begin{align*}
+&K_x=\frac{3GM}{2R^5}(C-A)YZ\\
+&K_y=\frac{3GM}{2R^5}(C-A)XZ\\
+&K_z=0
+\end{align}
+
+Coordinate eclittiche: $\lambda$ longitudine eclittica del SOle, $\epsilon$ obliquit\'a dell'eclittica
+
+\end{wordonframe}
+
 
 \section{Perturbazion}
