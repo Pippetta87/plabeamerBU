@@ -4,13 +4,13 @@
 
 \begin{align*}
 V(\vec{r})=-\frac{Gm}{r}[\int\rho'\,d^3r'+\cos{\theta}\int\frac{r'}{r}\cos{\theta'}\rho(\vec{r}')\,d^3r'\\
-+\frac{1}{2}(3\cos{\theta}^2-1)\int\frac{r'}{r}\frac{1}{2}(3\cos{\theta}^2-1)\rho(\vec{r}')\,d^3r'+\ldots]
++\frac{1}{2}(3\cos^2{\theta}-1)\int\frac{r'}{r}\frac{1}{2}(3\cos^2{\theta}-1)\rho(\vec{r}')\,d^3r'+\ldots]
 \end{align*}
 
 \begin{block}{Potenziale di quadrupolo}
 
 \begin{equation*}
-V(\vec{r})=-\frac{Gm}{r}[M+\frac{1}{2r^2}(A-C)(3\cos{\theta}^2-1)+\ldots]
+V(\vec{r})=-\frac{Gm}{r}[M+\frac{1}{2r^2}(A-C)(3\cos^2{\theta}-1)+\ldots]
 \end{equation*}
 
 \end{block}
@@ -46,7 +46,7 @@ J_2^{\oplus}\approx\num{e-3}\\
 
 \begin{align*}
 &V=-\frac{k^2\mu}{r}+V'\\
-&V'=-\frac{3Q}{r^5}(\frac{1}{3}-\cos{\theta}^2)\\
+&V'=-\frac{3Q}{r^5}(\frac{1}{3}-\cos^2{\theta})\\
 &Q=\frac{1}{2}k^2\mu R^2J_2
 \end{align*}
 
@@ -77,9 +77,9 @@ T_{\lambda}=\frac{\pi}{\Delta}T_{r}
 \begin{wordonframe}{forza perturbatrice}
 
 \begin{align*}
-&f_x=3Qr\expy{-4}(5\cos{\theta}^2-1)\sin{\theta}\cos{\lambda}\\
-&f_y=3Qr\expy{-4}(5\cos{\theta}^2-1)\sin{\theta}\sin{\lambda}\\
-&f_z=3Qr\expy{-4}(5\cos{\theta}^2-1)\cos{\theta}
+&f_x=3Qr\expy{-4}(5\cos^2{\theta}-1)\sin{\theta}\cos{\lambda}\\
+&f_y=3Qr\expy{-4}(5\cos^2{\theta}-1)\sin{\theta}\sin{\lambda}\\
+&f_z=3Qr\expy{-4}(5\cos^2{\theta}-1)\cos{\theta}
 \end{align*}
 
 \begin{block}{Integrali primi del moto ($i=0$)}
@@ -168,7 +168,7 @@ d\vec{K}=\vec{r}\wedge d\vec{F}=\frac{GM\,dm}{R^3}(1+3\frac{\scap{R}{r}}{R^2})\v
 
 \begin{figure}[!ht]
 
-\includegraphics[width=0.85\textwidth]{eclcoord}
+\includegraphics[width=0.75\textwidth]{eclcoord}
 
 \end{figure}
 
