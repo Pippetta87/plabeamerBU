@@ -137,93 +137,35 @@ S(r,\beta,\lambda,t)=S_r(r)+S_{\beta}(\beta)+S_{\lambda}(\lambda)-\sigma t
 \end{frame}
 
 \begin{wordonframe}{Canonical var}
-
-\begin{columns} \begin{column}{0.5\textwidth}
-
+\begin{columns}\begin{column}{0.5\textwidth}
 \begin{align*}
 &\PDy{J_{\phi}}{S}=\phi-nt\\
 &\PDy{J_{\chi}}{S}=w-v=\chi\\
 &\PDy{J_{\psi}}{S}=\lambda-\bar{\lambda}=\psi
 \end{align*}
-
-\end{column} \begin{column}{0.5\textwidth}
-
+\end{column}\begin{column}{0.5\textwidth}
 \begin{align*}
 &S_{\lambda}=J_{\lambda}\lambda\\
 &S_{\beta}=Jw-J_{\lambda}\bar{\lambda}\\
 &S_r=ku\sqrt{a}(u+e\sin{u})-ku\sqrt{p}v\\
 &\PDy{E}{S_r}=\frac{\phi}{n} \ \PDy{J}{S_r}=-v
 \end{align*}
-
-\end{column} \end{columns}
-
-
+\end{column}\end{columns}
 \end{wordonframe}
 
 
 \section{Sistemi integrabili e degenerazione}
 
 \begin{frame}{Teorema di Liuville-Arnol'd}
-
 Se in un sistema Hamiltoniano con n gradi di libert\'a sono noti n integrali primi del moto indipendenti ed in involuzione (parentesi di Poisson nulle) allora esiste una trasformazione canonica nelle variabili angolo-azione nella quale H dipende solo dalle variabili azione mentre le variabili angolo evolvono linearmente nel tempo. Le equazioni del moto potranno essere risolte tramite quadratura.
-
-
 \end{frame}
 
 \begin{wordonframe}{Integrabilit\'a EOM}
-
 \begin{align*}
 \frac{dq_1}{\sqrt{2(hf_1-v_1+c_1)}}=\ldots=\frac{dq_n}{\sqrt{2(hf_n-v_n+c_n)}}=\frac{dt}{f}=d\tau
 \end{align*}
-
 \end{wordonframe}
 
 \begin{frame}{Periodi del moto}
-
 Quando i periodi indipendenti sono meno dei gradi di libert\'a si parla di degenerazione: \'e connessa con la possibilit\'a di scegliere in pi\'u modi le 3 costanti del moto del teorema di L-A.
-
 \end{frame}
-
-\section{Perturbations}
-
-\subsection{Lagrange perturbation equations}
-
-\begin{frame}{Lagrange perturbed equations}
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-\begin{block}{Lagrange parenthesys}
-\begin{align*}
-&[F,G]=-[G,F]=\PDy{F}{q^i}\PDy{G}{p_i}-\PDy{G}{q^i}\PDy{F}{p^i}\\
-&\{c_a,c_b\}[c_b,c_d]=-\delta_{ad}
-\end{align*}
-Lagrange's parenthesys of constant of motion is constant.
-\end{block}
-\end{column}\begin{column}{0.5\textwidth}
-\begin{block}{Perturbing function}
-Perturbing force conservative: $\vec{F}=-\nabla \phi_p$: $\TDy{t}{c_a}=\{c_a,\phi_p\}=\{c_a,c_b\}\PDy{c_b}{\phi_b}$.
-\begin{align*}
-&H=H_0+\phi_p=\frac{1}{2}p^2-\frac{Gm}{r}+\phi_p
-\end{align*}
-\end{block}
-\end{column}\end{columns}
-\begin{columns}[T]\begin{column}{0.5\textwidth}
-\begin{align*}
-&\phi_p(a,e,i,\Omega,\bar{\omega}=\omega+\Omega,\epsilon=\bar{\omega}+\epsilon';t), \epsilon'=nt-nt_0-\chi(t)\ \chi=\int ndt'
-\end{align*}
-\end{column}
-\begin{column}{0.5\textwidth}
-\end{column}\end{columns}
-\end{frame}
-
-
-\begin{wordonframe}{Lagrange perturbation equation}
-\begin{block}{Costanti del moto}
-2N costanti del moto $c_a (N=3)$
-\begin{align*}
-\{H_0,c_a\}=0
-\end{align*}
-\end{block}
-
-\end{wordonframe}
-
-
