@@ -189,28 +189,41 @@ Quando i periodi indipendenti sono meno dei gradi di libert\'a si parla di degen
 \subsection{Lagrange perturbation equations}
 
 \begin{frame}{Lagrange perturbed equations}
-
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
+\begin{block}{Lagrange parenthesys}
+\begin{align*}
+&[F,G]=-[G,F]=\PDy{F}{q^i}\PDy{G}{p_i}-\PDy{G}{q^i}\PDy{F}{p^i}\\
+&\{c_a,c_b\}[c_b,c_d]=-\delta_{ad}
+\end{align*}
+Lagrange's parenthesys of constant of motion is constant.
+\end{block}
+\end{column}\begin{column}{0.5\textwidth}
+\begin{block}{Perturbing function}
+Perturbing force conservative: $\vec{F}=-\nabla \phi_p$: $\TDy{t}{c_a}=\{c_a,\phi_p\}=\{c_a,c_b\}\PDy{c_b}{\phi_b}$.
+\begin{align*}
+&H=H_0+\phi_p=\frac{1}{2}p^2-\frac{Gm}{r}+\phi_p
+\end{align*}
+\end{block}
+\end{column}\end{columns}
+\begin{columns}[T]\begin{column}{0.5\textwidth}
+\begin{align*}
+&\phi_p(a,e,i,\Omega,\bar{\omega}=\omega+\Omega,\epsilon=\bar{\omega}+\epsilon';t), \epsilon'=nt-nt_0-\chi(t)\ \chi=\int ndt'
+\end{align*}
+\end{column}
+\begin{column}{0.5\textwidth}
+\end{column}\end{columns}
+\end{frame}
+
+
+\begin{wordonframe}{Lagrange perturbation equation}
 \begin{block}{Costanti del moto}
 2N costanti del moto $c_a (N=3)$
 \begin{align*}
 \{H_0,c_a\}=0
 \end{align*}
 \end{block}
-\end{column}\begin{column}{0.5\textwidth}
-\begin{block}{Perturbing function}
-Perturbing force conservative: $\vec{F}=-\nabla \phi_p$.
-\end{block}
-\end{column}\end{columns}
 
-\end{frame}
-
-
-
-
-
-\begin{wordonframe}{}
 \end{wordonframe}
 
 
