@@ -1,4 +1,4 @@
-\section{Equazioni di Hamilton}
+\section{Equazioni di Hamilton}\linkdest{Hameqs}
 \begin{frame}{Hamiltoniana problema 2 corpi ridotto}
 \begin{columns}
 \begin{column}{0.2\textwidth}
@@ -29,91 +29,57 @@
 \end{frame}
 
 \begin{wordonframe}{Meccanica Hamiltoniana}
-
 \begin{block}{Equazioni di Hamilton}
 \begin{align*}
 &\dot{q}=\PDy{p}{H}\\
 &\dot{p}=-\PDy{q}{H}
 \end{align*}
 \end{block}
-
 $\TDy{t}{H}=\PDy{t}{H}$
-
 \end{wordonframe}
 
-
-\section{Equazione di Hamilton-Jacobi}
+\section{Equazione di Hamilton-Jacobi}\linkdest{HJeqs}
 
 \begin{frame}{Problema di H-J}
-
 \begin{block}{Trasformazioni canoniche}
-
 \begin{align*}
 (p,q)\to(\xi(p,q),\eta(p,q))
 \end{align*}
-
 che lasciano invariate le equazioni di Hamilton.
-
 \end{block}
-
 \begin{block}{Problema di H-J}
-
 Trovare trasformazione canonica tale che $K=0$: $(\xi,\eta)$ sono costanti del moto.
-
 \end{block}
-
 \begin{block}{Funzione generatrice $S(q,\eta,t)$}
-
 \begin{align*}
 &\xi=\PDof{\eta}S(q,\eta,t)\ (2: \xi(p,q))\\
 &p=\PDof{q}S(q,\eta,t)\ (1:\eta(q,p))\\
 &K=H+\PDy{t}{S}\ K=0\Leftrightarrow H(q,\PDy{q}{S},t)=-\PDy{t}{S}
 \end{align*}
-
 \end{block}
-
 \end{frame}
 
-
 \begin{frame}{Soluzione dell'equazione di H-J}
-
 \begin{align*}
 \frac{1}{2\mu}[(\PDy{r}{S})^2+\frac{1}{r^2}(\PDy{\beta}{S})^2+\frac{1}{r^2\cos^2{\beta}}(\PDy{\lambda}{S})^]-\frac{k^2\mu}{r}=-\PDy{t}{S}
 \end{align*}
-
 Un integrale completo contiene tante variabili quanti sono i gradi di libert\'a: le $\eta$.
-
 \begin{block}{L'equazione di H-J \'e separabile}
-
 \begin{columns}
-
 \begin{column}{0.5\textwidth}
-
 Variabili canoniche $J_{\phi}, J_{\chi}, J_{\psi}$:
-
 \begin{equation*}
 S=J_{\phi}(u+e\sin{u})+J_{\chi}\chi+J_{\psi}\psi-Et
 \end{equation*}
-
 \end{column}
-
 \begin{column}{0.5\textwidth}
-
 Variabili canoniche $E, J, J_{\lambda}$:
-
 \begin{equation*}
 S(r,\beta,\lambda,t)=S_r(r)+S_{\beta}(\beta)+S_{\lambda}(\lambda)-\sigma t
 \end{equation*}
-
 \end{column}
-
 \end{columns}
-
-
-
 \end{block}
-
-
 \end{frame}
 
 \begin{wordonframe}{Canonical var}
@@ -134,7 +100,7 @@ S(r,\beta,\lambda,t)=S_r(r)+S_{\beta}(\beta)+S_{\lambda}(\lambda)-\sigma t
 \end{wordonframe}
 
 
-\section{Sistemi integrabili e degenerazione}
+\section{Sistemi integrabili e degenerazione}\linkdest{intdeg}
 
 \begin{frame}{Teorema di Liuville-Arnol'd}
 Se in un sistema Hamiltoniano con n gradi di libert\'a sono noti n integrali primi del moto indipendenti ed in involuzione (parentesi di Poisson nulle) allora esiste una trasformazione canonica nelle variabili angolo-azione nella quale H dipende solo dalle variabili azione mentre le variabili angolo evolvono linearmente nel tempo. Le equazioni del moto potranno essere risolte tramite quadratura.
