@@ -1,4 +1,4 @@
-\section{Potenziali con orbite chiuse e limitate}
+\section{Potenziali con orbite chiuse e limitate}\linkdest{sec:orbitso}
 \begin{frame}{Potenziali centrali con orbite limitate}
 \begin{block}{Teorema di Bertrand}
 among central force potentials with bound orbits, there are only two types of central force potentials where all bound orbits are also closed:
@@ -14,7 +14,7 @@ Punto stazionario di V ( cio\'e del potenziale efficacie).
 Stabilit\'a orbita: $\TtwoDy{r}{V}<0$
 \end{wordonframe}
 
-\section{Orbite Kepleriane}
+\section{Orbite Kepleriane}\linkdest{sec:orbitsk}
 
 \begin{frame}{Problema ridotto}
 \begin{columns}
@@ -117,104 +117,60 @@ Terza legge di Keplero: $T\propto a\expy{\frac{3}{2}}$ (per pianeti maggiori sis
 moto medio $\frac{2\pi}{T}$: $n^2a^3=k^2$.
 \end{wordonframe}
 
-
 \begin{frame}{Elementi orbitali}
-
 \input{orbelements}
-
 \end{frame}
 
-
-
 \begin{wordonframe}{Elementi orbitali}
-
-Piano ecclittica: piano orbita solare rif geocentrico: ''intersezione della sfera celestecon il piano su cui giace l'orbita terrestre
-
-Linea dei nodi \'e intersezione tra piano orbita pianeta e piano eclittica, i \'e l'inclinazione del piano dell'orbita rispetto al piano dell'eclittica
-
+Piano ecclittica: piano orbita solare rif geocentrico: ''intersezione della sfera celeste con il piano su cui giace l'orbita terrestre
+Linea dei nodi \'e intersezione tra piano orbita pianeta e piano eclittica, i \'e l'inclinazione del piano dell'orbita rispetto al piano dell'eclittica.
 L'angolo $\Omega$ identifica l'orientazione della linea dei nodi rispetto al punto $\gamma$ posizione del Sole all'equinozio di primavera; l'angolo $\omega$ identifica la direzione del semi-asse maggiore rispetto alla linea dei nodi; l'angolo $\nu$ identifica la posizione del pianeta sull'orbita.
-
 \end{wordonframe}
 
-
 \begin{frame}{Orbite Kepleriane - legge del moto.}
-
 \begin{columns}
-
 \begin{column}{0.2\textwidth}
-
 \begin{figure}[!ht]
-
 \includegraphics[width=\textwidth]{ellipseinO}
-
 \end{figure}
-
-
-
 \end{column}
-
 \begin{column}{0.8\textwidth}
-
 \begin{block}{Anomalia eccentrica}
-
 \begin{align*}
 &r\cos{\nu}=a\cos{u}-ae\\
 &\pi\frac{ab}{T}=\frac{1}{2}nab=\frac{1}{2}r^2\dot{v}=\frac{1}{2}br\dot{u}\\
 &=\frac{1}{2}ab(1-e\cos{u})\dot{u}=\frac{1}{2}ab\TDof{t}(u-e\sin{u})
 \end{align*}
-
 \end{block}
-
 \end{column}
-
 \end{columns}
-
 \begin{block}{Anomalia media: equazione di Keplero}
-
 \begin{align*}\label{eq:Keq}
 &\phi=u-e\sin{u}\Rightarrow\dot{\phi}=n
 \end{align*}
-
-
 \end{block}
-
-
 \end{frame}
 
 \begin{wordonframe}{legge oraria}
-
 u \'e detta anomalia eccentrica
-
 Relazioni trigonometriche tra ue $\nu$
 \begin{align*}
 &a(1-e\cos{u})=\frac{p}{1+\cos{\nu}}\\
 &\tg{\nu/2}=\sqrt{\frac{1+e}{1-e}}\tg{u/2}
 \end{align*}
-
 $\phi(t)=\phi_0+nt=n(t-t_0)$: $\phi_0$ \'e l'istante in cui $\phi=\nu=0$.
-
 Il problema \'e caratterizzato da 6 costanti: $E$, $J_x$, $J_y$, $J_z$, $\nu$ (direzione di $\vec{L}$), $t_0$.
-
 L'equazione di Keplero \refeq{eq:Keq}, noti n e $t_0$, fornisce $\phi(t)$ e quindi $u(t)$ e ancora $r(t)$ e $\nu(t)$.
-
 \end{wordonframe}
 
 \begin{frame}{Approx. piccola eccentricit\'a}
-
 \begin{figure}[!ht]
-
 \includegraphics[width=0.5\textwidth]{tolomeo}
-
 \end{figure}
-
-
 \end{frame}
 
 \begin{wordonframe}{orbita quasi circolare}
 $\sqrt{\frac{1+e}{1-e}}\approx1+e$
-
 $v\approx\phi+2e\sin{\phi}$
-
 equante di Tolomeo: l'angolo in E \'e $\phi$ a meno di $e^2$
-
 \end{wordonframe}

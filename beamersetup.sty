@@ -34,19 +34,17 @@
 %\usetheme{Singapore}
 %\usetheme{Szeged}
 %\usetheme{Warsaw}
-
 \addtobeamertemplate{block begin}{%
   \setlength{\textwidth}{0.95\textwidth}%
   \setlength\abovedisplayskip{0pt}%
 }{}
-
-
 \setbeamertemplate{caption}{\insertcaption}
-
+\makeatletter%%see https://tex.stackexchange.com/questions/411987/how-to-fix-hypertargets-directing-links-to-the-line-after-the-target-it-looks-l
+ \newcommand{\linkdest}[1]{\Hy@raisedlink{\hypertarget{#1}{}}}
+\makeatother
 % If you have a file called "university-logo-filename.xxx", where xxx
 % is a graphic format that can be processed by latex or pdflatex,
 % resp., then you can add a logo as follows:
-
 % \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
 % \logo{\pgfuseimage{university-logo}}
 
@@ -57,16 +55,15 @@
 %  \begin{frame}<beamer>{Outline}    %\tableofcontents[currentsection]
 %  \end{frame}
 %}
-
 %\AtBeginDocument{%
 %\addtolength\abovedisplayskip{-0.5\baselineskip}%
 %\addtolength\belowdisplayskip{-1\baselineskip}%
 %\addtolength\abovedisplayshortskip{-0.5\baselineskip}%
 %\addtolength\belowdisplayshortskip{-1\baselineskip}%
 %}
-
 \makeatletter
 \AtBeginPart{%
+  \frame{\partpage}
   \addtocontents{toc}{\protect\beamer@partintoc{\the\c@part}{\beamer@partnameshort}{\the\c@page}}%
 }
 %% number, shortname, page.
@@ -83,33 +80,30 @@
 \makeatother%
 
 \setbeamertemplate{navigation symbols}{}
-
 \makeatletter
 \setbeamertemplate{headline}
 {
     \leavevmode%
     \hbox{%Refintro
-        \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+        \begin{beamercolorbox}[wd=.1\paperwidth,ht=4.5ex,dp=1ex,center]{author in head/foot}%
             \hyperlink{intro}{Intro}
         \end{beamercolorbox}%
-
- \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%refs Part 1
-            \hyperlink{part:p1}{Newtonian}
-        \end{beamercolorbox}%Problema Kepleriano
-
- \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%refs Part 2
-            \hyperlink{part:p2}{analitycs}
+ \begin{beamercolorbox}[wd=.1\paperwidth,ht=4.5ex,dp=1ex,center]{author in head/foot}%refs index intro
+            \hyperlink{part:kepler}{2body}:\hyperlink{sec:orbitso}{propV}.\hyperlink{sec:orbitk}{orbitK}
+        \end{beamercolorbox}%2body problem
+ \begin{beamercolorbox}[wd=.2\paperwidth,ht=4.5ex,dp=1ex,center]{author in head/foot}%refs twobody
+            \hyperlink{part:analytics}{analitycs}:\hyperlink{Hameqs}{Heqs}.\hyperlink{HJeqs}{HJeqs}.\hyperlink{intdeg}{IntDeg}
         \end{beamercolorbox}% Problema Kepleriano: meccanica analitica
         
-         \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%refs Part 3
-            \hyperlink{part:p3}{perturbations}
+         \begin{beamercolorbox}[wd=.2\paperwidth,ht=4.5ex,dp=1ex,center]{author in head/foot}%refs Part 3
+            \hyperlink{part:p3}{perturbations}:\hyperlink{asph}{asph}.\hyperlink{Nmethod}{Nmeth}.\hyperlink{MSprec}{MSprec}.\hyperlink{sec:pert}{pert}
         \end{beamercolorbox}% Potenziale non newtoniano: perturbazioni
         
-        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%refs Part 4
-            \hyperlink{part:p4}{3bodies}
+        \begin{beamercolorbox}[wd=.2\paperwidth,ht=4.5ex,dp=1ex,center]{author in head/foot}%refs Part 4
+            \hyperlink{part:p4}{3bodies}:\hyperlink{3Br}{3Bristr}
         \end{beamercolorbox}%Problema dei 3 corpi
         
-        \begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+        \begin{beamercolorbox}[wd=.15\paperwidth,ht=4.5ex,dp=1ex,right]{date in head/foot}%
             %   \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
             \insertframenumber{} \hspace*{2ex}  / \hspace*{2ex} \inserttotalframenumber
             \hspace*{2ex} 
